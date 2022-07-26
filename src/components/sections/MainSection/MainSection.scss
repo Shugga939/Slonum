@@ -1,0 +1,97 @@
+@import './../../../styles/variables.scss';
+
+.mainSection {
+  position: relative;
+  width: 100%;
+  padding: 0 263px;
+  display: flex;
+  justify-content: center;
+
+  &__wrapper {
+    width: 100%;
+    min-width: 1394px;
+  }
+
+  &__information-container {
+    margin-top: 245px;
+    max-width: 653px;
+  }
+  
+  &__information-preface {
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 0.08em;
+    line-height: 166%;
+  }
+
+  &__information-title {
+    
+  }
+
+  &__information-subtitle {
+    margin-top: 38px;
+  }
+
+  &__information-ui-container {
+    margin-top: 60px;
+    display: flex;
+
+    button {
+      margin-right: 60px;
+    }
+  }
+}
+
+.header {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+
+  &__logo-contrainer {
+    display: flex;
+    align-items: center;  
+  }
+
+  &__label {
+    font-family: $commonFont;
+    font-size: 34px;
+    font-weight: 700;
+    color: $accentFontColor;
+    margin-left: 5px;
+    margin-top: 7px;
+    letter-spacing: 0;
+
+  }
+
+  &__label>span {
+    font-family: $commonFont;
+    font-size: 34px;
+    font-weight: 400;
+    color: $additionalAccentColor;
+    text-transform: uppercase;
+  }
+
+  &__login-button {
+    padding: 8px;
+    width: 180px;
+    height: min-content;
+    border-radius: 15px;
+    font-size: inherit;
+    border: 1px solid transparent;
+    z-index: 2;
+
+    &--start {
+      background: $additionalAccentColor;
+      color: $mainBackgroundColor;
+
+    }
+    
+    &--ended {
+      background: $mainBackgroundColor;
+      border: 1px solid $accentFontColor;
+    }
+  }
+
+}

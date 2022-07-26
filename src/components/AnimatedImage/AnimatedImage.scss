@@ -1,0 +1,130 @@
+.animatedImage {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  height: 693px;
+  width: 864px;
+  border-radius: 0px;
+  
+
+  &__space {
+    position: relative;
+
+  }
+
+  &__space-background {
+    position: absolute;
+
+  }
+
+  &__stars {
+    position: absolute;
+    top: 14px;
+    right: 43px;
+  }
+
+  &__airplane {
+    position: absolute;
+    top: 329px;
+    right: 30px;
+  }
+
+  &__elephant {
+    position: absolute;
+    top: 225px;
+    right: 156px;
+  }
+
+  &__clock {
+    position: absolute;
+    top: 220px;
+    left: 118px;
+  }
+
+  &__bulb {
+    position: absolute;
+    top: 327px;
+    left: 464px;
+  }
+
+  &__planet-1 {
+    position: absolute;
+    top: 82px;
+    left: 209px;
+  }
+
+  &__planet-2 {
+    position: absolute;
+    top: 134px;
+    left: 427px;
+  }
+
+  &__planet-3 {
+    position: absolute;
+    top: 461px;
+    left: 317px;
+  }
+
+  &__atom {
+    position: absolute;
+    top: 132px;
+    left: 75px;
+  }
+
+
+  &__number-0 {
+    position: absolute;
+    top: 270px;
+    right: 140px;
+  }
+
+  &__number-1 {
+    position: absolute;
+    top: 216px;
+    right: 45px;
+  }
+
+  &__division {
+    position: absolute;
+    top: 185px;
+    left: 515px;
+  }
+
+  &__plus {
+    position: absolute;
+    top: 241px;
+    left: 432px;
+  }
+
+  &__palette {
+    position: absolute;
+    top: 119px;
+    right: 71px;
+  }
+
+  &__rocket {
+    position: absolute;
+    top: 353px;
+    left: 88px;
+  }
+
+  &__balloon {
+    position: absolute;
+    top: 296px;
+    left: 354px;
+  }
+
+  &__child {
+    position: absolute;
+    top: 473px;
+    left: 370px;
+  }
+
+  &__paper-airplanes {
+    position: absolute;
+    top: 716px;
+    right: 525px;
+  }
+
+}

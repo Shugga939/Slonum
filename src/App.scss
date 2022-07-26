@@ -1,0 +1,20 @@
+@import './styles/variables.scss';
+
+.app {
+  height: min-content;
+  min-height: 100vh;
+  background-color: $mainBackgroundColor;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(243, 243, 243);
+  min-width: 1440px;
+
+  &__wrapper {
+    max-width: 1920px;
+    width: 100%;
+    background-color: $mainBackgroundColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
