@@ -3,13 +3,12 @@
 .mainSection {
   position: relative;
   width: 100%;
-  padding: 0 263px;
+  height: 810px;
   display: flex;
   justify-content: center;
 
   &__wrapper {
-    width: 100%;
-    min-width: 1394px;
+    flex: 0 1 1394px;
   }
 
   &__information-container {
@@ -30,6 +29,7 @@
 
   &__information-subtitle {
     margin-top: 38px;
+    
   }
 
   &__information-ui-container {
@@ -69,7 +69,7 @@
     font-family: $commonFont;
     font-size: 34px;
     font-weight: 400;
-    color: $additionalAccentColor;
+    color: $secondEminentFontColor;
     text-transform: uppercase;
   }
 

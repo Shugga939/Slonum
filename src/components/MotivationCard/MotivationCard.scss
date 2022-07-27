@@ -1,0 +1,29 @@
+@import './../../styles/variables.scss';
+
+.motivationCard {
+  height: 170px;
+  max-width: 445px;
+  border-radius: 16px;
+  padding: 18px 35px 0px 35px;
+  background-color: $mainBackgroundColor;
+  box-shadow: $commonBoxShadow;
+
+  &:nth-child(n+4) {
+    
+    .motivationCard__img-container {
+      margin-top: 5px;
+      margin-bottom: -5px;
+    }
+  }
+
+  &__img-container {
+    width: 70px;
+    height: 70px;
+  }
+
+  &__text {
+    margin-top: 8px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+  }
+}

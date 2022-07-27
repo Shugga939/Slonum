@@ -4,10 +4,13 @@ $mainBackgroundColor : #FFFFFF;
 $mainAccentColor : #14A76C;
 $additionalAccentColor : #FF652F;
 $auxiliaryAccentColor: #E02D05;
+
+// font colors
 $mainFontColor : #4F5569;
 $accentFontColor : #1F1D2A;
 $buttonsFontColor: $mainBackgroundColor;
-
+$firstEminentFontColor : $mainAccentColor;
+$secondEminentFontColor : $additionalAccentColor;
 
 //shadows
 $commonBoxShadow: 0px 5px 30px rgba(215, 211, 225, 0.5);
