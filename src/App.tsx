@@ -4,6 +4,7 @@ import { FC } from 'react';
 import MainSection from './components/sections/MainSection/MainSection';
 import DescriptionSection from './components/sections/DescriptionSection/DescriptionSection';
 import MotivationSection from './components/sections/MotivationSection/MotivationSection';
+import PlanSection from './components/sections/PlanSection/PlanSection';
 
 const App :FC = () => {
   return (
@@ -12,6 +13,7 @@ const App :FC = () => {
         <MainSection/>
         <DescriptionSection/>
         <MotivationSection/>
+        <PlanSection/>
       </div>
     </div>
   );

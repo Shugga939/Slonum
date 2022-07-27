@@ -46,3 +46,21 @@ h2 {
   line-height: 27px;
   letter-spacing: 0.05em;
 }
+
+.link--firstEminentColor {
+  color: $firstEminentFontColor;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-color: $firstEminentFontColor;
+  text-underline-position: under;
+  text-decoration-thickness: 0.5px;
+}
+
+.link--secondEminentColor {
+  color: $secondEminentFontColor;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-color: $secondEminentFontColor;
+  text-underline-position: under;
+  text-decoration-thickness: 0.5px;
+}

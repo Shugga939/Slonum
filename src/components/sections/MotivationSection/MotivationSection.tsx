@@ -17,7 +17,6 @@ const cards : IMotivationCard[] = [
   {img:certification, text: 'Персональный диплом в разных номинациях каждому участнику'},
   {img:gift, text: 'Призы и скидки для подписчиков и авторизованных пользователей'},
   {img:email, text: 'Бесплатный диплом на email — через 1 день после конкурса'},
-  {img:publishing, text: 'Публикация работ победителей во ВКонтакте. Подписывайтесь!'}
 ]
 
 const renderCards = (card: IMotivationCard)=> {
@@ -25,7 +24,7 @@ const renderCards = (card: IMotivationCard)=> {
     <MotivationCard
       img={card.img}
       text={card.text}
-      key={card.text}
+      key={card.img}
     />
   )
 }
@@ -39,6 +38,12 @@ const MotivationSection :FC = () => {
         </h2>
         <div className="motivationSection__cards">
           <List items={cards} renderItem={renderCards}/> 
+          <MotivationCard 
+            img={publishing} 
+            TSXelem={[<div className="motivationCard__text"> Публикация работ победителей во ВКонтакте. <a href="# " className="link--secondEminentColor"> Подписывайтесь! </a> </div>]}
+            text={''}
+            key={publishing}
+          />
         </div>
       </div>
     </div>
