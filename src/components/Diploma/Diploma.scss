@@ -1,0 +1,132 @@
+@import './../../styles/variables.scss';
+
+.diploma {
+  position: relative;
+  z-index: 1;
+  height: 595px;
+  width: 842px;
+  padding: 22px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #6693B4 0%, #8FEFEA 100%);
+
+  // transform: rotate(90deg);
+
+  &__wrapper {
+    position: relative;
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $mainBackgroundColor;
+    font-family: $additional;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    font-size: 16px;
+  }
+
+  &__title {
+    font-size: 60px;
+    letter-spacing: 0.03em;
+    margin-top: 95px;
+    color: $firstEminentFontColor;
+    text-transform: uppercase;
+  }
+
+  &__subtitle {
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin-top: 40px;
+    text-transform: uppercase;
+    color: black;
+  }
+
+  &__name {
+    width: 500px;
+    font-size: 35px;
+    font-weight: 500;
+    margin-top: 18px;
+    border-bottom: 2px solid $mainAccentColor;
+    color: black;
+    text-align: center;
+    line-height: 40px;
+    letter-spacing: 0.05rem;
+  }
+
+  &__place {
+    margin-top: 20px;
+    font-size: 30px;
+    letter-spacing: 0.045em;
+    margin-top: 25px;
+    color: $firstEminentFontColor;
+  }
+
+  &__nomination {
+    width: 353px;
+    text-align: center;
+    margin-top: 25px;
+    line-height: 24px;
+  }
+
+  &__date {
+    margin-top: 60px;
+  }
+
+  // svg
+
+  &__coluds {
+    position: absolute;
+    top: 27px;
+    left: 49.5px;
+  }
+
+  &__seal {
+    position: absolute;
+    right: 11px;
+    bottom: -6px;
+  }
+
+  &__logo {
+    position: absolute;
+    bottom: 56px;
+    left: 40px;
+  }
+
+  &__earth {
+    position: absolute;
+    right: 0;
+    bottom: 8px;
+    z-index: 2;
+  }
+
+  &__water {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+
+  &__stones {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+  }
+
+  &__tree {
+    position: absolute;
+    left: 0;
+    bottom: 35px;
+    z-index: 3;
+  }
+
+  &__elephant {
+    position: absolute;
+    left: 226px;
+    bottom: 20px;
+    z-index: 3;
+  }
+}

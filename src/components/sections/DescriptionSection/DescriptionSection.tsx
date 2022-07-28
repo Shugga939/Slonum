@@ -3,7 +3,7 @@ import { FC } from 'react';
 
 const DescriptionSection :FC = () => {
   return (
-    <div className="descriptionSection">
+    <section className="descriptionSection">
       <div className="descriptionSection__wrapper">
           <p className="p-1 descriptionSection__paragraph">
             Компания <b> СлонУм </b> – проводит конкурс для детей в котором могут участвовать ребята 
@@ -12,7 +12,7 @@ const DescriptionSection :FC = () => {
             и даже <strong>  без художественных способностей. </strong>
           </p>
       </div>
-    </div>
+    </section>
   );
 }
 

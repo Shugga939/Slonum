@@ -7,7 +7,7 @@ import AnimatedImage from '../../AnimatedImage/AnimatedImage';
 
 const MainSection :FC = () => {
   return (
-    <div className="mainSection">
+    <section className="mainSection">
       <div className="mainSection__wrapper">
         <header className="header">
           <div className="header__logo-contrainer">
@@ -32,7 +32,7 @@ const MainSection :FC = () => {
         </div>
         <AnimatedImage/>
       </div>
-    </div>
+    </section>
   );
 }
 

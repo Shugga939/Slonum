@@ -31,22 +31,26 @@ const renderCards = (card: IMotivationCard)=> {
 
 const MotivationSection :FC = () => {
   return (
-    <div className="motivationSection">
+    <section className="motivationSection">
       <div className="motivationSection__wrapper">
         <h2 className="motivationSection__title"> 
           Для чего <span className="motivationSection__title-accent"> нужно</span> участвовать 
         </h2>
         <div className="motivationSection__cards">
           <List items={cards} renderItem={renderCards}/> 
-          <MotivationCard 
-            img={publishing} 
-            TSXelem={[<div className="motivationCard__text"> Публикация работ победителей во ВКонтакте. <a href="# " className="link--secondEminentColor"> Подписывайтесь! </a> </div>]}
-            text={''}
-            key={publishing}
-          />
+          <div className="motivationCard">         
+            <div className="motivationCard__wrapper">
+              <div className="motivationCard__img-container">
+                <img src={publishing} alt="" />
+              </div>
+              <div className="motivationCard__text">
+                Публикация работ победителей во ВКонтакте. <a href="# " className="link--secondEminentColor"> Подписывайтесь! </a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 

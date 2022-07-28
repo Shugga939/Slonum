@@ -5,7 +5,7 @@ import dottedLine from './../../../assets/img/planSection/line.svg'
 
 const PlanSection :FC = () => {
   return (
-    <div className="planSection">
+    <section className="planSection">
       <div className="planSection__wrapper">
         <h2 className="planSection__title"> Пошаговый <span className="planSection__title-accent"> план</span> </h2>
         <div className="planSection__plan">
@@ -27,7 +27,7 @@ const PlanSection :FC = () => {
           </p>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
