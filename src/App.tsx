@@ -6,6 +6,7 @@ import DescriptionSection from './components/sections/DescriptionSection/Descrip
 import MotivationSection from './components/sections/MotivationSection/MotivationSection';
 import PlanSection from './components/sections/PlanSection/PlanSection';
 import RewardSection from './components/sections/RewardSection/RewardSection';
+import RegistrationSection from './components/sections/RegistrationSection/RegistrationSection';
 
 const App :FC = () => {
   return (
@@ -16,6 +17,7 @@ const App :FC = () => {
         <MotivationSection/>
         <PlanSection/>
         <RewardSection/>
+        <RegistrationSection/>
       </div>
     </div>
   );

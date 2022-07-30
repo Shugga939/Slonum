@@ -1,0 +1,153 @@
+@import './../../../styles/variables.scss';
+@import './../../ui/CustomCheckbox/CustomCheckbox.scss';
+
+.registrationSection {
+  width: 100%;
+  height: 750px;
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+
+  &__wrapper {
+    position: relative;
+    flex: 0 1 1394px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__discount-section {
+    margin-top: 123px;
+  }
+
+  &__form {
+    width: 660px;
+    margin-right: 22px;
+
+    button[type="submit"] {
+      width: 290px;
+    }
+  }
+
+  &__title {
+  }
+
+  &__inputs-container {
+    margin-top: 50px;
+
+    input {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__checkbox-container {
+    margin-top: 30px;
+    margin-left: -1px;
+    margin-bottom: 50px;
+
+    a {
+      font-weight: 700;
+    }
+  }
+
+  &__form-airplanes {
+    position: absolute;
+    right: 57px;
+    bottom: 58px;
+  }
+}
+
+.discount-card {
+  position: relative;
+  height: 476px;
+  width: 490px;
+  border-radius: 40px;
+  background-color: $mainBackgroundColor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid $firstEminentFontColor;
+  z-index: 1;
+
+
+  &__label {
+    position: absolute;
+    left: calc(50% - 140px);
+    top: -17px;
+    z-index: 2;
+  }
+
+  &__title {
+    color: $mainBackgroundColor;
+    z-index: 3;
+    margin-left: 15px;
+    margin-top: 2px;
+  }
+
+  &__subtitle {
+    margin-top: 98px;
+    width: 100%;
+    text-align: start;
+    padding-left: 60px;
+  }
+
+  &__price-container {
+    display: flex;
+    justify-content: start;
+    align-items:flex-start;
+    width: 100%;
+    margin-top: 27px;
+    padding-left: 60px;
+    color: black;
+  }
+
+  &__newPrice {
+    font-size: 96px;
+    line-height: 114px;
+  }
+
+  &__oldPrice {
+    font-weight: 500;
+    font-size: 30px;
+    letter-spacing: 0.05em;
+    line-height: 35px;
+    text-decoration: line-through;
+    margin-left: 13px;
+    margin-top: 17px;
+  }
+
+  &__condition {
+    margin-top: 25px;
+  }
+
+  &__social {
+    position: absolute;
+    bottom: -1px;
+    height: 76px;
+    width: 101%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 55px 0 60px;
+    background-color: $firstEminentFontColor;
+    border-radius: 0 0 35px 35px;
+  }
+
+  &__text {
+    color: $mainBackgroundColor;
+  }
+
+  &__icons {
+    margin-top: 10px;
+  }
+
+  &__link {
+    height: 39px;
+    width: 39px;
+    margin-left: 16px;
+  }
+
+  &__icon {
+    height: 39px;
+    width: 39px;
+  }
+}

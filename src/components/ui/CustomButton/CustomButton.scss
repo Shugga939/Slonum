@@ -1,6 +1,6 @@
 @import './../../../styles/variables.scss';
 
-.button {
+.custom-button {
   width: 300px;
   height: 60px;
   border-radius: 15px;
@@ -9,6 +9,15 @@
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 0.04em;
-  box-shadow: $mainAccentBoxShadow;
-  background: $mainAccentColor;
+
+
+  &--mainColor {
+    box-shadow: $mainAccentBoxShadow;
+    background: $mainAccentColor;
+  }
+
+  &--auxiliaryColor {
+    box-shadow: $auxiliaryAccentBoxShadow;
+    background: $auxiliaryAccentColor;
+  }
 }

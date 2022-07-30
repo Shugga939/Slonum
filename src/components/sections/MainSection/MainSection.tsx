@@ -2,7 +2,7 @@ import './MainSection.scss'
 import { FC } from 'react';
 import logo from './../../../assets/img/Logo.svg'
 import Timer from '../../ui/Timer/Timer';
-import Button from '../../ui/Button/Button';
+import CustomButton from '../../ui/CustomButton/CustomButton';
 import AnimatedImage from '../../AnimatedImage/AnimatedImage';
 
 const MainSection :FC = () => {
@@ -26,7 +26,7 @@ const MainSection :FC = () => {
             Учавствуйте в конкурсе и получайте призы в различных номинациях детского рисунка для всех возрастов
           </p>
           <div className="mainSection__information-ui-container">
-            <Button color="mainAccent" text="Учавствовать"/>
+            <CustomButton color="mainAccent" text="Учавствовать" type="button"/>
             <Timer/>
           </div>
         </div>

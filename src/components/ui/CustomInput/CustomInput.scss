@@ -1,0 +1,17 @@
+@import './../../../styles/variables.scss';
+
+.customInput {
+  height: 60px;
+  width: 540px;
+  border-radius: 15px;
+  padding: 0px 20px;
+  border: 1px solid #9FA0A7;
+  background-color: $mainBackgroundColor;
+  font-size: 20px;
+  letter-spacing: 0.04em;
+  color: $accentFontColor;
+  
+  &::placeholder {
+    letter-spacing: 0.04em;
+  }
+}

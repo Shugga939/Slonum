@@ -1,0 +1,36 @@
+@import './../../../styles/variables.scss';
+
+.customCheckbox {
+  display: flex;
+
+  &__checkbox {
+    height: 18.5px;
+    min-width: 18.5px;
+    border-radius: 5px;
+    border: 1.5px solid $mainAccentColor;
+    background-color: $mainBackgroundColor;
+    margin-right: 12px;
+    
+    &:hover {
+      background-image: url('./../../../assets/img/customCheckbox/СheckMark--hover.svg');
+      background-position: center;
+      background-repeat: no-repeat; 
+      cursor: pointer;
+    }
+
+    &:checked {
+      content: '';
+      background-image: url('./../../../assets/img/customCheckbox/СheckMark--checked.svg');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-color: $mainAccentColor;
+    }
+  }
+
+  &__text {
+    font-size: 15px;
+    line-height: 18px;
+    letter-spacing: 0.04em;
+    margin-top: 2px;
+  }
+}
