@@ -8,6 +8,8 @@ import PlanSection from './components/sections/PlanSection/PlanSection';
 import RewardSection from './components/sections/RewardSection/RewardSection';
 import RegistrationSection from './components/sections/RegistrationSection/RegistrationSection';
 import FAQSection from './components/sections/FAQSection/FAQSection';
+import SubscriptionSection from './components/sections/SubscriptionSection/SubscriptionSection';
+import Footer from './components/sections/Footer/Footer';
 
 const App :FC = () => {
   return (
@@ -20,6 +22,8 @@ const App :FC = () => {
         <RewardSection/>
         <RegistrationSection/>
         <FAQSection/>
+        <SubscriptionSection/>
+        <Footer/>
       </div>
     </div>
   );

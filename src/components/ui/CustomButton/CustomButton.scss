@@ -11,12 +11,12 @@
   letter-spacing: 0.04em;
 
 
-  &--mainColor {
+  &--mainAccent {
     box-shadow: $mainAccentBoxShadow;
     background: $mainAccentColor;
   }
 
-  &--auxiliaryColor {
+  &--auxiliaryAccent {
     box-shadow: $auxiliaryAccentBoxShadow;
     background: $auxiliaryAccentColor;
   }

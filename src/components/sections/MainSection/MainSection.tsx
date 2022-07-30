@@ -9,7 +9,7 @@ const MainSection :FC = () => {
   return (
     <section className="mainSection">
       <div className="mainSection__wrapper">
-        <header className="header">
+        <header className="header" id="header">
           <div className="header__logo-contrainer">
             <img src={logo} alt="" className="header__logo" />
             <span className="header__label">

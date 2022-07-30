@@ -1,14 +1,36 @@
-import './AdvantageSection.scss'
+import './Footer.scss'
 import { FC } from 'react';
 
-const AdvantageSection :FC = () => {
+import vk_icon from './../../../assets/icons/vk.svg'
+import zen_icon from './../../../assets/icons/zen.svg'
+import tg_icon from './../../../assets/icons/tg.svg'
+
+
+const Footer :FC = () => {
   return (
-    <div className="advantageSection">
-      <div className="advantageSection__wrapper">
-        
+    <footer className="footer">
+      <div className="footer__wrapper">
+        <div className="footer__social">
+          <p> Наши соцсети: </p>
+          <div className="footer__icons">
+            <img src={tg_icon} alt="" className="footer__icon" />
+            <img src={zen_icon} alt="" className="footer__icon" />
+            <img src={vk_icon} alt="" className="footer__icon" />
+          </div>
+        </div>
+        <div className="footer__central-container">
+          <ul className="footer__links">
+            <li className="footer__link">Главная</li>
+            <li className="footer__link">Личный кабинет</li>
+            <li className="footer__link">Контакты</li>
+            <li className="footer__link">Конфиденциальность</li>
+          </ul>
+          <span> @ Все права защищены.  ООО”Слонум” 2022 </span>
+        </div>
+        <a href="#header" className="footer__up-button"/>
       </div>
-    </div>
+    </footer>
   );
 }
 
-export default AdvantageSection;
+export default Footer;

@@ -4,9 +4,10 @@ import CustomInput from '../../ui/CustomInput/CustomInput';
 import CustomButton from '../../ui/CustomButton/CustomButton';
 
 import label from './../../../assets/img/registrationSection/label.svg'
-import vk_icon from './../../../assets/icons/vk.svg'
+import vk_icon from './../../../assets/icons/vk-withBorder.svg'
 import ok_icon from './../../../assets/icons/ok.svg'
 import airplanes from './../../../assets/img/registrationSection/airplanes.svg'
+import CustomCheckbox from '../../ui/CustomCheckbox/CustomCheckbox';
 
 const RegistrationSection :FC = () => {
 
@@ -15,10 +16,11 @@ const RegistrationSection :FC = () => {
   const cityInputRef = useRef<HTMLInputElement>(null)
   const emailInputRef = useRef<HTMLInputElement>(null)
   const passwordInputRef = useRef<HTMLInputElement>(null)
+  const chekBoxRef = useRef<HTMLInputElement>(null)
 
 
   return (
-    <div className="registrationSection">
+    <section className="registrationSection">
       <div className="registrationSection__wrapper">
         <div className="registrationSection__discount-section">
           <div className="discount-card">
@@ -53,7 +55,8 @@ const RegistrationSection :FC = () => {
             <CustomInput placeholder="Пароль" forwardRef ={passwordInputRef}/>
           </div>
           <div className="registrationSection__checkbox-container">
-            <div className="customCheckbox">
+            <CustomCheckbox linksColor="mainAccent" forwardRef={chekBoxRef}/>
+            {/* <div className="customCheckbox">
               <input type="checkbox" className="customCheckbox__checkbox" />
               <div className="customCheckbox__text">
                 <p> 
@@ -63,13 +66,13 @@ const RegistrationSection :FC = () => {
                   <a href="#" className="link--firstEminentColor">Политикой обработки данных</a>
                 </p>
               </div>
-            </div>
+            </div> */}
           </div>
-          <CustomButton color="auxiliaryColor" text="Учавствовать" type="submit"/>
+          <CustomButton color="auxiliaryAccent" text="Учавствовать" type="submit"/>
           <img src={airplanes} alt="" className="registrationSection__form-airplanes" />
         </form>
       </div>
-    </div>
+    </section>
   );
 }
 

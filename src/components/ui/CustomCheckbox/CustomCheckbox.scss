@@ -33,4 +33,21 @@
     letter-spacing: 0.04em;
     margin-top: 2px;
   }
+
+  &__link {
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-underline-position: under;
+    text-decoration-thickness: 0.5px;
+    &--mainAccent {
+      color: $firstEminentFontColor;
+      text-decoration-color: $firstEminentFontColor;
+    }
+
+    &--white {
+      color: white;
+      text-decoration-color: white;
+    }
+  }
 }

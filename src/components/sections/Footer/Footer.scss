@@ -1,0 +1,66 @@
+@import './../../../styles/variables.scss';
+
+.footer {
+  height: 256px;
+  width: 100%;
+  display: flex;  
+  justify-content: center;
+
+  &__wrapper {
+    flex: 0 1 1394px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__social {
+    font-family: $accentFont;
+    margin-bottom: 35px;
+  }
+
+  &__icons {
+    margin-top: 5px;
+  }
+
+  &__icon {
+    margin-left: 23px;
+
+    &:first-child {
+      margin-left: 0px;
+    }
+  }
+
+  &__central-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 95px;
+    margin-top: 30px;
+  }
+
+  &__links {
+    width: 697px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  &__link {
+    font-family: $accentFont;
+    color: $accentFontColor;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+
+  &__up-button {
+    height: 56px;
+    width: 56px;
+    border-radius: 56px;
+    background-color: $additionalAccentColor;
+    box-shadow: $additionalAccentBoxShadow;
+    background-image: url('./../../../assets/img/footer/arrow-up.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 12px;
+  }
+}

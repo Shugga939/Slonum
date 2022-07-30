@@ -1,0 +1,51 @@
+
+.subscriptionSection {
+  width: 100%;
+  height: 373px;
+  margin-top: 103px;
+  display: flex;
+  justify-content: center;
+
+  &__wrapper {
+    position: relative;
+    flex: 0 1 1680px;
+    margin: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 81px;
+    background-image: url('./../../../assets/img/subscriptionSection/BackgroundImage.png');
+    color: white;
+  }
+
+  &__title {
+    margin-top: 30px;
+    color: white;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    letter-spacing: 0.05em;
+    line-height: 27px;
+  }
+
+  &__form {
+    margin-top: 40px;
+    width: 930px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-between;
+    margin-left: 110px;
+
+    button[type="submit"] {
+      width: 360px;
+    }
+    
+    .customCheckbox {
+      margin-top: 22px;
+      margin-left: -3px;
+    }
+  }
+}
