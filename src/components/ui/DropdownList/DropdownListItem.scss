@@ -1,0 +1,52 @@
+@import './../../../styles/variables.scss';
+
+.dropdownListItem {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-bottom: 1px solid $accentFontColor;
+
+  &__head {
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title {
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    
+  }
+
+  &__state {
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    background-color: $additionalAccentColor;
+    border-radius: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &--closed {
+      background-image: url('./../../../assets/img/dropdownListIem/state-closed.svg');
+    }
+
+    &--opened {
+      background-image: url('./../../../assets/img/dropdownListIem/state-opened.svg');
+    }
+  }
+
+  &__spoiler {
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.3s;
+  }
+
+  &__text {
+    padding: 10px 0 30px ;
+    color: $accentFontColor;
+  }
+}

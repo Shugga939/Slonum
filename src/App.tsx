@@ -7,6 +7,7 @@ import MotivationSection from './components/sections/MotivationSection/Motivatio
 import PlanSection from './components/sections/PlanSection/PlanSection';
 import RewardSection from './components/sections/RewardSection/RewardSection';
 import RegistrationSection from './components/sections/RegistrationSection/RegistrationSection';
+import FAQSection from './components/sections/FAQSection/FAQSection';
 
 const App :FC = () => {
   return (
@@ -18,6 +19,7 @@ const App :FC = () => {
         <PlanSection/>
         <RewardSection/>
         <RegistrationSection/>
+        <FAQSection/>
       </div>
     </div>
   );

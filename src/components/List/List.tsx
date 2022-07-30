@@ -8,7 +8,7 @@ function List <T> (props:ListProps<T>) {
 
   return (
     <>
-    {props.items.map(props.renderItem)}
+      {props.items.map(props.renderItem)}
     </>
   );
 }
