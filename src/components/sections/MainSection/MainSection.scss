@@ -81,6 +81,8 @@
     font-size: inherit;
     border: 1px solid transparent;
     z-index: 2;
+    transition: all 0.5s linear;
+    transition-delay: 0.5s;
 
     &--start {
       background: $additionalAccentColor;

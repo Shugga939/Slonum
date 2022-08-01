@@ -20,10 +20,18 @@ const Footer :FC = () => {
         </div>
         <div className="footer__central-container">
           <ul className="footer__links">
-            <li className="footer__link">Главная</li>
-            <li className="footer__link">Личный кабинет</li>
-            <li className="footer__link">Контакты</li>
-            <li className="footer__link">Конфиденциальность</li>
+            <li className="footer__link">
+              <a href=""> Главная </a>
+            </li>
+            <li className="footer__link">
+              <a href="">Личный кабинет</a>
+            </li>
+            <li className="footer__link">
+              <a href="">Контакты</a>
+            </li>
+            <li className="footer__link">
+              <a href="">Конфиденциальность</a>
+            </li>
           </ul>
           <span> @ Все права защищены.  ООО”Слонум” 2022 </span>
         </div>

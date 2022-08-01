@@ -50,6 +50,10 @@
     color: $accentFontColor;
     font-weight: 700;
     letter-spacing: 0.03em;
+    
+    a {
+      text-decoration: none;
+    }
   }
 
   &__up-button {

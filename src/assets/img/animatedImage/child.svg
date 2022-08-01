@@ -179,7 +179,7 @@
 <path d="M109.271 120.287C109.271 120.287 109.271 122.322 112.436 124.811C115.602 127.525 117.184 128.43 117.184 128.43L121.254 127.751C121.254 127.751 114.245 119.608 109.271 120.287Z" fill="#A8716D"/>
 <path d="M118.993 114.632V120.287L116.732 119.834L117.637 115.763L118.993 114.632Z" fill="#D3A8A5"/>
 </g>
-<defs>
+<!-- <defs>
 <linearGradient id="paint0_linear_0_882" x1="71.3875" y1="194.866" x2="79.5974" y2="190.822" gradientUnits="userSpaceOnUse">
 <stop stop-color="#C01919"/>
 <stop offset="0.289287" stop-color="#C82BB8"/>
@@ -202,5 +202,5 @@
 <clipPath id="clip0_0_882">
 <rect width="275" height="330" fill="white" transform="translate(0.580078 0.400391)"/>
 </clipPath>
-</defs>
+</defs> -->
 </svg>

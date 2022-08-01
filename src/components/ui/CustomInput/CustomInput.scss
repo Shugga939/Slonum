@@ -12,6 +12,7 @@
   color: $accentFontColor;
   
   &::placeholder {
+    color: $mainFontColor;
     letter-spacing: 0.04em;
   }
 }

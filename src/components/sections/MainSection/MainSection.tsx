@@ -1,11 +1,19 @@
 import './MainSection.scss'
-import { FC } from 'react';
+import { FC, useEffect, useRef } from 'react';
 import logo from './../../../assets/img/Logo.svg'
 import Timer from '../../ui/Timer/Timer';
 import CustomButton from '../../ui/CustomButton/CustomButton';
 import AnimatedImage from '../../AnimatedImage/AnimatedImage';
 
 const MainSection :FC = () => {
+
+  const loginButtonRef = useRef<HTMLButtonElement>(null)
+
+  useEffect(()=>{
+    loginButtonRef.current?.classList.remove('header__login-button--start')
+    loginButtonRef.current?.classList.add('header__login-button--ended')
+  },[])
+
   return (
     <section className="mainSection">
       <div className="mainSection__wrapper">
@@ -17,7 +25,10 @@ const MainSection :FC = () => {
               <span>Ум </span>
             </span>
           </div>
-          <button className="header__login-button header__login-button--ended"> Войти </button>
+          <button 
+            className="header__login-button header__login-button--start"
+            ref={loginButtonRef}
+          > Войти </button>
         </header>
         <div className="mainSection__information-container">
           <span className="mainSection__information-preface"> От компании СлонУМ </span>
