@@ -10,14 +10,13 @@
   font-size: 20px;
   letter-spacing: 0.04em;
 
-
   &--mainAccent {
     box-shadow: $mainAccentBoxShadow;
-    background: $mainAccentColor;
+    background: $mainButtonsColor;
   }
 
   &--auxiliaryAccent {
     box-shadow: $auxiliaryAccentBoxShadow;
-    background: $auxiliaryAccentColor;
+    background: $auxiliaryButtonsColor;
   }
 }

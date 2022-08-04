@@ -11,8 +11,8 @@ import tree from './../../assets/img/diploma/tree.svg'
 import elephant from './../../assets/img/diploma/elephant.svg'
 
 
-const Diploma :FC = () => {
-  
+const Diploma: FC = () => {
+
   return (
     <div className="diploma">
       <div className="diploma__wrapper">
@@ -26,7 +26,7 @@ const Diploma :FC = () => {
           Возраст от 0 до 4 лет, г. Калуга
         </p>
         <span className="diploma__date"> 15.08.2022 </span>
-        <img src={clouds} alt="" className="diploma__coluds" />
+        <img src={clouds} alt="" className="diploma__clouds" />
         <img src={seal} alt="" className="diploma__seal" />
         <img src={logo} alt="" className="diploma__logo" />
       </div>

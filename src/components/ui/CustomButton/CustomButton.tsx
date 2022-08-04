@@ -7,11 +7,10 @@ interface ButtonProps {
   text: string,
 }
 
-
-const CustomButton :FC<ButtonProps> = ({color, text, type}) => {
+const CustomButton: FC<ButtonProps> = ({ color, text, type }) => {
   return (
-    <button 
-      className= {`custom-button custom-button--${color}`}
+    <button
+      className={`custom-button custom-button--${color}`}
       type={type}
     >
       {text}

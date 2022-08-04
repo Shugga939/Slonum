@@ -2,16 +2,16 @@ import './CustomCheckbox.scss'
 import { FC, Ref } from 'react';
 
 interface CustomInputProps {
-  forwardRef : Ref<HTMLInputElement>,
-  linksColor : "mainAccent" | "whiteColor"
+  forwardRef: Ref<HTMLInputElement>,
+  linksColor: "mainAccent" | "whiteColor"
 }
 
-const CustomCheckbox :FC<CustomInputProps> = ({forwardRef, linksColor }) => {
+const CustomCheckbox: FC<CustomInputProps> = ({ forwardRef, linksColor }) => {
   return (
     <label className="customCheckbox">
-      <input type="checkbox" className="customCheckbox__checkbox" />
+      <input type="checkbox" className="customCheckbox__checkbox" ref={forwardRef} />
       <div className="customCheckbox__text">
-        <p> 
+        <p>
           Отправляя данные я соглашаюсь с&nbsp;
           <a href="#" className={`customCheckbox__link customCheckbox__link--${linksColor}`}>Условиями конкурса</a>
           <br /> и &nbsp;

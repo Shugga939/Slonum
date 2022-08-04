@@ -6,7 +6,7 @@ import zen_icon from './../../../assets/icons/zen.svg'
 import tg_icon from './../../../assets/icons/tg.svg'
 
 
-const Footer :FC = () => {
+const Footer: FC = () => {
   return (
     <footer className="footer">
       <div className="footer__wrapper">
@@ -35,7 +35,7 @@ const Footer :FC = () => {
           </ul>
           <span> @ Все права защищены.  ООО”Слонум” 2022 </span>
         </div>
-        <a href="#header" className="footer__up-button"/>
+        <a href="#header" className="footer__up-button" />
       </div>
     </footer>
   );

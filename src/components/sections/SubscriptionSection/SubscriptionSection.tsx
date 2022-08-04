@@ -4,7 +4,7 @@ import CustomInput from '../../ui/CustomInput/CustomInput';
 import CustomButton from '../../ui/CustomButton/CustomButton';
 import CustomCheckbox from '../../ui/CustomCheckbox/CustomCheckbox';
 
-const SubscriptionSection :FC = () => {
+const SubscriptionSection: FC = () => {
 
   const emailRef = useRef<HTMLInputElement>(null)
   const checkBoxRef = useRef<HTMLInputElement>(null)
@@ -19,9 +19,9 @@ const SubscriptionSection :FC = () => {
           Обещаем присылать только самое важное <br /> и интересное <b>:)</b>
         </p>
         <form className="subscriptionSection__form">
-          <CustomInput placeholder="Email" forwardRef={emailRef}/>
-          <CustomButton color="mainAccent" type="submit" text="Отправить"/>
-          <CustomCheckbox linksColor="whiteColor" forwardRef={checkBoxRef}/>
+          <CustomInput placeholder="Email" forwardRef={emailRef} />
+          <CustomButton color="mainAccent" type="submit" text="Отправить" />
+          <CustomCheckbox linksColor="whiteColor" forwardRef={checkBoxRef} />
         </form>
       </div>
     </section>

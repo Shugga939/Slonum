@@ -20,39 +20,38 @@ import balloon from './../../assets/img/animatedImage/balloon.svg'
 import airplanes from './../../assets/img/animatedImage/airplanes.svg'
 import child from './../../assets/img/animatedImage/child.svg'
 import pencil from './../../assets/img/animatedImage/pencil.svg'
-import Animations from '../Animations/Animations';
+import Animations from '../Animations/HeaderAnimation';
 
 
-const AnimatedImage :FC = () => {
-
+const AnimatedImage: FC = () => {
   return (
     <div className="animatedImage">
-      <Animations/>
+      <Animations />
       <div className="animatedImage__space">
-        <img src={space} alt="" className="animatedImage__space-background"/>
-        <img src={stars} alt="" className="animatedImage__stars"/>
-        <img src={airplane} alt="" className="animatedImage__airplane"/>
-        <img src={elephant} alt="" className="animatedImage__elephant"/>
-        <img src={clock} alt="" className="animatedImage__clock"/>
-        <img src={bulb} alt="" className="animatedImage__bulb"/>
-        <img src={planet1} alt="" className="animatedImage__big-planet"/>
-        <img src={planet2} alt="" className="animatedImage__striped-planet"/>
-        <img src={planet3} alt="" className="animatedImage__dark-planet"/>
-        <img src={atom} alt="" className="animatedImage__atom"/>
-        <img src={number0} alt="" className="animatedImage__number-0"/>
-        <img src={number1} alt="" className="animatedImage__number-1"/>
-        <img src={division} alt="" className="animatedImage__division"/>
-        <img src={plus} alt="" className="animatedImage__plus"/>
-        <img src={palette} alt="" className="animatedImage__palette"/>
-        <img src={rocket} alt="" className="animatedImage__rocket"/>
-        <img src={balloon} alt="" className="animatedImage__balloon"/>
-      </div> 
+        <img src={space} alt="" className="animatedImage__space-background" />
+        <img src={stars} alt="" className="animatedImage__stars" />
+        <img src={airplane} alt="" className="animatedImage__airplane" />
+        <img src={elephant} alt="" className="animatedImage__elephant" />
+        <img src={clock} alt="" className="animatedImage__clock" />
+        <img src={bulb} alt="" className="animatedImage__bulb" />
+        <img src={planet1} alt="" className="animatedImage__big-planet" />
+        <img src={planet2} alt="" className="animatedImage__striped-planet" />
+        <img src={planet3} alt="" className="animatedImage__dark-planet" />
+        <img src={atom} alt="" className="animatedImage__atom" />
+        <img src={number0} alt="" className="animatedImage__number-0" />
+        <img src={number1} alt="" className="animatedImage__number-1" />
+        <img src={division} alt="" className="animatedImage__division" />
+        <img src={plus} alt="" className="animatedImage__plus" />
+        <img src={palette} alt="" className="animatedImage__palette" />
+        <img src={rocket} alt="" className="animatedImage__rocket" />
+        <img src={balloon} alt="" className="animatedImage__balloon" />
+      </div>
       <div className="animatedImage__child-container">
-        <img src={pencil} alt="" className="animatedImage__pencil"/>
-        <img src={child} alt="" className="animatedImage__child"/>
+        <img src={pencil} alt="" className="animatedImage__pencil" />
+        <img src={child} alt="" className="animatedImage__child" />
       </div>
       <div className="animatedImage__paper-airplanes">
-        <img src={airplanes} alt="" className="animatedImage__airplanes"/>
+        <img src={airplanes} alt="" className="animatedImage__airplanes" />
       </div>
     </div>
   );

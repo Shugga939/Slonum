@@ -1,15 +1,19 @@
 import './RegistrationSection.scss'
-import { FC, useRef } from 'react';
+import { FC, useEffect, useRef } from 'react';
 import CustomInput from '../../ui/CustomInput/CustomInput';
 import CustomButton from '../../ui/CustomButton/CustomButton';
+import CustomCheckbox from '../../ui/CustomCheckbox/CustomCheckbox';
+import startAnimation from '../../../animations/planeInRegistrationSection'
 
 import label from './../../../assets/img/registrationSection/label.svg'
 import vk_icon from './../../../assets/icons/vk-withBorder.svg'
 import ok_icon from './../../../assets/icons/ok.svg'
-import airplanes from './../../../assets/img/registrationSection/airplanes.svg'
-import CustomCheckbox from '../../ui/CustomCheckbox/CustomCheckbox';
+import airplane_left from './../../../assets/img/registrationSection/papper-plane_left.svg'
+import airplane_flying from './../../../assets/img/registrationSection/papper-plane_flying.svg'
+import airplane_right from './../../../assets/img/registrationSection/papper-plane_right.svg'
 
-const RegistrationSection :FC = () => {
+
+const RegistrationSection: FC = () => {
 
   const nameInputRef = useRef<HTMLInputElement>(null)
   const birthdayInputRef = useRef<HTMLInputElement>(null)
@@ -17,10 +21,25 @@ const RegistrationSection :FC = () => {
   const emailInputRef = useRef<HTMLInputElement>(null)
   const passwordInputRef = useRef<HTMLInputElement>(null)
   const chekBoxRef = useRef<HTMLInputElement>(null)
+  const animatedSection = useRef<HTMLImageElement>(null)  //animation trigger
 
+  function playingAnimation() {
+    const boundingClient = animatedSection.current!.getBoundingClientRect()
+    if (window.innerHeight - boundingClient.bottom > 0 &&
+      boundingClient.top + boundingClient.height > 0
+    ) {
+      startAnimation()
+      document.removeEventListener('scroll', playingAnimation)
+    }
+  }
+
+  useEffect(() => {
+    document.addEventListener('scroll', playingAnimation)
+  }, [])
 
   return (
     <section className="registrationSection">
+      <img src={airplane_flying} alt="" className="registrationSection__form-airplane--flying" />
       <div className="registrationSection__wrapper">
         <div className="registrationSection__discount-section">
           <div className="discount-card">
@@ -36,10 +55,10 @@ const RegistrationSection :FC = () => {
               <span className="discount-card__text"> Получить скидку: </span>
               <div className="discount-card__icons">
                 <a href="" className="discount-card__link" >
-                  <img src={vk_icon} alt="" className="discount-card__icon"/>
+                  <img src={vk_icon} alt="" className="discount-card__icon" />
                 </a>
-                <a href="" className="discount-card__link" > 
-                  <img src={ok_icon} alt="" className="discount-card__icon"/>
+                <a href="" className="discount-card__link" >
+                  <img src={ok_icon} alt="" className="discount-card__icon" />
                 </a>
               </div>
             </div>
@@ -48,28 +67,18 @@ const RegistrationSection :FC = () => {
         <form className="registrationSection__form">
           <h2 className="registrationSection__title"> Зарегистрируйтесь, чтобы участвовать </h2>
           <div className="registrationSection__inputs-container">
-            <CustomInput placeholder="ФИО ребёнка" forwardRef ={nameInputRef}/>
-            <CustomInput placeholder="Дата рождения" forwardRef ={birthdayInputRef}/>
-            <CustomInput placeholder="Город" forwardRef ={cityInputRef}/>
-            <CustomInput placeholder="Email" forwardRef ={emailInputRef}/>
-            <CustomInput placeholder="Пароль" forwardRef ={passwordInputRef}/>
+            <CustomInput placeholder="ФИО ребёнка" forwardRef={nameInputRef} />
+            <CustomInput placeholder="Дата рождения" forwardRef={birthdayInputRef} />
+            <CustomInput placeholder="Город" forwardRef={cityInputRef} />
+            <CustomInput placeholder="Email" forwardRef={emailInputRef} />
+            <CustomInput placeholder="Пароль" forwardRef={passwordInputRef} />
           </div>
           <div className="registrationSection__checkbox-container">
-            <CustomCheckbox linksColor="mainAccent" forwardRef={chekBoxRef}/>
-            {/* <div className="customCheckbox">
-              <input type="checkbox" className="customCheckbox__checkbox" />
-              <div className="customCheckbox__text">
-                <p> 
-                  Отправляя данные я соглашаюсь с&nbsp;
-                  <a href="#" className="link--firstEminentColor">Условиями конкурса</a>
-                  <br /> и &nbsp;
-                  <a href="#" className="link--firstEminentColor">Политикой обработки данных</a>
-                </p>
-              </div>
-            </div> */}
+            <CustomCheckbox linksColor="mainAccent" forwardRef={chekBoxRef} />
           </div>
-          <CustomButton color="auxiliaryAccent" text="Учавствовать" type="submit"/>
-          <img src={airplanes} alt="" className="registrationSection__form-airplanes" />
+          <CustomButton color="auxiliaryAccent" text="Участвовать" type="submit" />
+          <img src={airplane_left} alt="" className="registrationSection__form-airplane--left" ref={animatedSection} />
+          <img src={airplane_right} alt="" className="registrationSection__form-airplane--right" />
         </form>
       </div>
     </section>

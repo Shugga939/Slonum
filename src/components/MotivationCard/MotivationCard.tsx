@@ -2,8 +2,8 @@ import './MotivationCard.scss'
 import { FC } from 'react';
 import { IMotivationCard } from '../../models/IMotivationCard';
 
-const MotivationCard :FC<IMotivationCard> = ({img, text}) => {
-  
+const MotivationCard: FC<IMotivationCard> = ({ img, text }) => {
+
   return (
     <div className="motivationCard">
       <div className="motivationCard__wrapper">

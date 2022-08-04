@@ -11,19 +11,20 @@ import FAQSection from './components/sections/FAQSection/FAQSection';
 import SubscriptionSection from './components/sections/SubscriptionSection/SubscriptionSection';
 import Footer from './components/sections/Footer/Footer';
 
-const App :FC = () => {
+const App: FC = () => {
+
   return (
     <div className="app">
       <div className="app__wrapper">
-        <MainSection/>
-        <DescriptionSection/>
-        <MotivationSection/>
-        <PlanSection/>
-        <RewardSection/>
-        <RegistrationSection/>
-        <FAQSection/>
-        <SubscriptionSection/>
-        <Footer/>
+        <MainSection />
+        <DescriptionSection />
+        <MotivationSection />
+        <PlanSection />
+        <RewardSection />
+        <RegistrationSection />
+        <FAQSection />
+        <SubscriptionSection />
+        <Footer />
       </div>
     </div>
   );

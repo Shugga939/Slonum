@@ -1,11 +1,27 @@
 @import './../../../styles/variables.scss';
 
 .planSection {
+  position: relative;
   width: 100%;
   height: 907px;
   background: url('./../../../assets/img/planSection/sky.svg');
   display: flex;
   justify-content: center;
+  overflow: hidden;
+
+  &__papper__plane {
+    position: absolute;
+    left: -150px;
+    top: 120px;
+    z-index: 2;
+  }
+
+  &__plane-path {
+    position: absolute;
+    left: calc(50% - 1050px);
+    top: 140px;
+    visibility: hidden;
+  }
 
   &__wrapper {
     flex: 0 1 1395px;
@@ -30,6 +46,7 @@
   &__plan {
     position: relative;
     margin-top: 87px;
+    height: 500px;
   }
 
   &__dotted-line {
@@ -37,6 +54,7 @@
     left: 91px;
     top: 45px;
   }
+
 
   &__circle {
     height: 80px;
@@ -60,10 +78,11 @@
   &__stepOne-text {
     position: absolute;
     top: 0;
-    left: 143px;
+    left: 163px;
     max-width: 230px;
     line-height: 24px;
     letter-spacing: 0.04em;
+    opacity: 0;
   }
 
   &__stepTwo-circle {
@@ -75,10 +94,11 @@
   &__stepTwo-text {
     position: absolute;
     top: 203px;
-    left: 610px;
+    left: 630px;
     max-width: 246px;
     line-height: 24px;
     letter-spacing: 0.04em;
+    opacity: 0;
   }
 
   &__stepThree-circle {
@@ -90,9 +110,10 @@
   &__stepThree-text {
     position: absolute;
     top: 419px;
-    left: 1092px;
+    left: 1112px;
     max-width: 290px;
     line-height: 24px;
     letter-spacing: 0.04em;
+    opacity: 0;
   }
 }

@@ -3,7 +3,7 @@
 .footer {
   height: 256px;
   width: 100%;
-  display: flex;  
+  display: flex;
   justify-content: center;
 
   &__wrapper {
@@ -50,7 +50,7 @@
     color: $accentFontColor;
     font-weight: 700;
     letter-spacing: 0.03em;
-    
+
     a {
       text-decoration: none;
     }

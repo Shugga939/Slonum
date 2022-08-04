@@ -10,11 +10,11 @@
     border: 1.5px solid $mainAccentColor;
     background-color: $mainBackgroundColor;
     margin-right: 12px;
-    
+
     &:hover {
       background-image: url('./../../../assets/img/customCheckbox/СheckMark--hover.svg');
       background-position: center;
-      background-repeat: no-repeat; 
+      background-repeat: no-repeat;
       cursor: pointer;
     }
 
@@ -40,6 +40,7 @@
     text-decoration-style: solid;
     text-underline-position: under;
     text-decoration-thickness: 0.5px;
+
     &--mainAccent {
       color: $firstEminentFontColor;
       text-decoration-color: $firstEminentFontColor;

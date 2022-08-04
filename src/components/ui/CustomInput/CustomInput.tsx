@@ -2,19 +2,18 @@ import './CustomInput.scss'
 import { FC, Ref } from 'react';
 
 interface CustomInputProps {
-  placeholder : string,
-  forwardRef : Ref<HTMLInputElement>,
-  className? : string
+  placeholder: string,
+  forwardRef: Ref<HTMLInputElement>,
+  className?: string
 }
 
-const CustomInput :FC<CustomInputProps> = ({placeholder, forwardRef, className }) => {
+const CustomInput: FC<CustomInputProps> = ({ placeholder, forwardRef, className }) => {
   return (
-    <input 
-      className= {className? `customInput ${className}` : "customInput" }
+    <input
+      className={className ? `customInput ${className}` : "customInput"}
       placeholder={placeholder}
-      ref={forwardRef }
+      ref={forwardRef}
     />
-      
   );
 }
 

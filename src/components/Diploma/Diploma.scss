@@ -11,8 +11,6 @@
   align-items: center;
   background: linear-gradient(180deg, #6693B4 0%, #8FEFEA 100%);
 
-  // transform: rotate(90deg);
-
   &__wrapper {
     position: relative;
     z-index: 3;
@@ -76,9 +74,9 @@
     margin-top: 60px;
   }
 
-  // svg
+  // svg-graphics
 
-  &__coluds {
+  &__clouds {
     position: absolute;
     top: 27px;
     left: 49.5px;
